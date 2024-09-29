@@ -6,8 +6,9 @@
   <title>Greyrock Music</title>
   
   <!-- Tailwind CSS CDN -->
-  <link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  
+  <!-- <link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
   <!-- Animate.css CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
@@ -29,7 +30,7 @@
 
     <!-- Right Section: Login, Cart, Join Waitlist -->
     <div class="flex items-center space-x-8">
-      <a href="#waitlist" class="border border-white text-white uppercase tracking-widest px-4 py-2 hover:bg-white hover:text-black transition">Join the Waitlist</a>
+      <a href="#join" class="border border-white text-white uppercase tracking-widest px-4 py-2 hover:bg-white hover:text-black transition">Join</a>
     </div>
   </header>
 
@@ -44,7 +45,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 bg-gray-900">
+    <section id="about" class="py-20 bg-stone-900">
       <div class="container mx-auto px-6">
         <h2 class="text-3xl font-bold text-center mb-8 animate__animated animate__fadeInUp">About Us</h2>
         <p class="text-center max-w-2xl mx-auto animate__animated animate__fadeInUp animate__delay-1s">
@@ -57,7 +58,73 @@
           Join us as we build a community that celebrates indie music in its purest form, with integrity, collaboration, and heart at the core.
         </p>
       </div>
-    </section>       
+    </section>   
+    
+    <!-- Events Section -->
+    <section id="events" class="py-10 bg-black">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-8 animate__animated animate__fadeInUp">Events</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-stone-900 p-6 rounded-lg animate__animated animate__fadeInUp">
+            <h3 class="text-2xl font-bold mb-4">Live Music Night</h3>
+            <p class="mb-4">Join us for a night of live music featuring local artists. Enjoy a night of great music, food, and drinks.</p>
+            <p class="text-stone-500">Saturday, August 14, 2024</p>
+            <p class="text-stone-500">7:00 PM - 10:00 PM</p>
+            <p class="text-stone-500">Greyrock Music Studio</p>
+          </div>
+          
+          <div class="bg-stone-900 p-6 rounded-lg animate__animated animate__fadeInUp animate__delay-1s">
+            <h3 class="text-2xl font-bold mb-4">Open Mic Night</h3>
+            <p class="mb-4">Show off your talent at our Open Mic Night. Sing, play an instrument, or perform spoken word.</p>
+            <p class="text-stone-500">Friday, August 20, 2024</p>
+            <p class="text-stone-500">6:00 PM - 9:00 PM</p>
+            <p class="text-stone-500">Greyrock Music Studio</p>
+          </div>
+
+          <div class="bg-stone-900 p-6 rounded-lg animate__animated animate__fadeInUp animate__delay-2s">
+            <h3 class="text-2xl font-bold mb-4">Music Workshop</h3>
+            <p class="mb-4">Learn from the best at our Music Workshop. Get tips and tricks from industry professionals.</p>
+            <p class="text-stone-500">Saturday, August 28, 2024</p>
+            <p class="text-stone-500">10:00 AM - 1:00 PM</p>
+            <p class="text-stone-500">Greyrock Music Studio</p>
+          </div>
+
+          <div class="bg-stone-900 p-6 rounded-lg animate__animated animate__fadeInUp animate__delay-3s">
+            <h3 class="text-2xl font-bold mb-4">Showcase Night</h3>
+            <p class="mb-4">Experience the best of local talent at our Showcase Night. Enjoy performances from a variety of artists and genres.</p>
+            <p class="text-stone-500">Saturday, September 14, 2024</p>
+            <p class="text-stone-500">7:00 PM - 10:00 PM</p>
+            <p class="text-stone-500">Greyrock Music Studio</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Merch Section -->
+    <section id="merch" class="py-10 bg-stone-900">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-8 animate__animated animate__fadeInUp">Merch</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-black p-6 rounded-lg animate__animated animate__fadeInUp">
+            <img src="assests/merch/tshirt.jpg" alt="t-shirt" class="w-full h-64 object-cover rounded-lg mb-4">
+            <h3 class="text-2xl font-bold mb-4">Greyrock Music T-Shirt</h3>
+            <p class="mb-4">Show your support for Greyrock Music with our classic logo t-shirt.</p>
+            <p class="text-stone-500 text-center">$25.00</p>
+            <button class="block w-full py-2 bg-blue-600 rounded-full hover:bg-blue-500 transition mt-4">Add to Cart</button>
+          </div>
+
+          <div class="bg-black p-6 rounded-lg animate__animated animate__fadeInUp animate__delay-1s">
+            <img src="assests/merch/hoodie.jpg" alt="Merch 2" class="w-full h-64 object-cover rounded-lg mb-4">
+            <h3 class="text-2xl font-bold mb-4">Greyrock Music Hoodie</h3>
+            <p class="mb-4">Stay warm and cozy with our Greyrock Music hoodie.</p>
+            <p class="text-stone-500 text-center">$45.00</p>
+            <button class="block w-full py-2 bg-blue-600 rounded-full hover:bg-blue-500 transition mt-4">Add to Cart</button>
+          </div>
+      </div>
+    </section>
   </main>
   <!-- Footer Section -->
   <footer class="bg-black py-8">
@@ -70,32 +137,32 @@
   
         <!-- Center: Navigation Links -->
         <div class="space-x-6">
-          <a href="#about" class="text-white hover:text-gray-400 transition">About</a>
-          <a href="#events" class="text-white hover:text-gray-400 transition">Events</a>
-          <a href="#merch" class="text-white hover:text-gray-400 transition">Merch</a>
-          <a href="#contact" class="text-white hover:text-gray-400 transition">Contact</a>
+          <a href="#about" class="text-white hover:text-stone-400 transition">About</a>
+          <a href="#events" class="text-white hover:text-stone-400 transition">Events</a>
+          <a href="#merch" class="text-white hover:text-stone-400 transition">Merch</a>
+          <a href="#contact" class="text-white hover:text-stone-400 transition">Contact</a>
         </div>
   
         <!-- Right: Social Media Links -->
         <div class="flex space-x-4">
-          <a href="#" class="text-white hover:text-gray-400 transition" aria-label="Facebook">
+          <a href="#" class="text-white hover:text-stone-400 transition" aria-label="Facebook">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M22.675 0h-21.35C.596 0 0 .597 0 1.333v21.334C0 23.403.596 24 1.325 24h11.495v-9.294H9.691v-3.622h3.129V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.464.099 2.794.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.763v2.312h3.59l-.467 3.622h-3.123V24h6.116C23.404 24 24 23.403 24 22.667V1.333C24 .597 23.404 0 22.675 0z"/>
             </svg>
           </a>
-          <a href="#" class="text-white hover:text-gray-400 transition" aria-label="Twitter">
+          <a href="#" class="text-white hover:text-stone-400 transition" aria-label="Twitter">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M24 4.557a9.93 9.93 0 0 1-2.828.775 4.932 4.932 0 0 0 2.165-2.724 9.864 9.864 0 0 1-3.127 1.195 4.916 4.916 0 0 0-8.38 4.482A13.94 13.94 0 0 1 1.671 3.149a4.916 4.916 0 0 0 1.523 6.573 4.897 4.897 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.918 4.918 0 0 0 4.588 3.417A9.867 9.867 0 0 1 0 19.54a13.94 13.94 0 0 0 7.548 2.212c9.056 0 14.01-7.496 14.01-13.986 0-.21-.005-.423-.014-.633A10.012 10.012 0 0 0 24 4.557z"/>
             </svg>
           </a>
-          <a href="#" class="text-white hover:text-gray-400 transition" aria-label="Instagram">
+          <a href="#" class="text-white hover:text-stone-400 transition" aria-label="Instagram">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.206.056 1.987.246 2.448.415a4.92 4.92 0 0 1 1.675 1.092 4.92 4.92 0 0 1 1.092 1.675c.169.461.359 1.242.415 2.448.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.056 1.206-.246 1.987-.415 2.448a4.92 4.92 0 0 1-1.092 1.675 4.92 4.92 0 0 1-1.675 1.092c-.461.169-1.242.359-2.448.415-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.206-.056-1.987-.246-2.448-.415a4.92 4.92 0 0 1-1.675-1.092 4.92 4.92 0 0 1-1.092-1.675c-.169-.461-.359-1.242-.415-2.448C2.175 15.747 2.163 15.367 2.163 12s.012-3.584.07-4.85c.056-1.206.246-1.987.415-2.448a4.92 4.92 0 0 1 1.092-1.675 4.92 4.92 0 0 1 1.675-1.092c.461-.169 1.242-.359 2.448-.415C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.77.131 4.67.303 3.758.588a6.92 6.92 0 0 0-2.517 1.648A6.92 6.92 0 0 0 .588 4.753c-.285.912-.457 2.012-.516 3.294C.013 8.332 0 8.741 0 12c0 3.259.013 3.668.072 4.948.059 1.282.231 2.382.516 3.294a6.92 6.92 0 0 0 1.648 2.517 6.92 6.92 0 0 0 2.517 1.648c.912.285 2.012.457 3.294.516C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.282-.059 2.382-.231 3.294-.516a6.92 6.92 0 0 0 2.517-1.648 6.92 6.92 0 0 0 1.648-2.517c.285-.912.457-2.012.516-3.294.059-1.28.072-1.689.072-4.948s-.013-3.668-.072-4.948c-.059-1.282-.231-2.382-.516-3.294a6.92 6.92 0 0 0-1.648-2.517A6.92 6.92 0 0 0 20.242.588c-.912-.285-2.012-.457-3.294-.516C15.668.013 15.259 0 12 0z"/>
               <path d="M12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998z"/>
               <circle cx="18.406" cy="5.594" r="1.44"/>
             </svg>
           </a>
-          <a href="#" class="text-white hover:text-gray-400 transition" aria-label="TikTok">
+          <a href="#" class="text-white hover:text-stone-400 transition" aria-label="TikTok">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M12 0C5.383 0 0 5.383 0 12c0 6.617 5.383 12 12 12 6.617 0 12-5.383 12-12C24 5.383 18.617 0 12 0zm2.94 8.795c.92.69 2.06 1.103 3.29 1.115v2.093c-1.455-.01-2.81-.49-3.89-1.297v5.872c0 2.8-2.271 5.075-5.075 5.075a5.081 5.081 0 0 1-2.415-.618v-2.413a2.964 2.964 0 0 0 1.42.37c1.641 0 2.975-1.335 2.975-2.975 0-.006-.001-.012-.001-.017h-.003v-3.99h-2.15V8.812h2.15V7.422C9.448 6.172 10.556 5 12.084 5c.578 0 1.117.169 1.56.459v3.336z"/>
             </svg>
@@ -104,7 +171,7 @@
       </div>
   
       <!-- Bottom: Copyright -->
-      <div class="text-center text-gray-500 mt-6">
+      <div class="text-center text-stone-500 mt-6">
         &copy; 2024 Greyrock Music. All rights reserved.
       </div>
     </div>
