@@ -16,28 +16,28 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body class="bg-black text-white font-sans">
-  <header class="flex justify-between items-center p-6 bg-black fixed w-full z-10">
+  <header class="flex justify-between items-center p-6 pt-10 bg-black fixed w-full z-10">
     <!-- Left Section: Events and Merch Links -->
     <div class="flex items-center space-x-8">
       <a href="#events" class="text-white uppercase tracking-widest hover:opacity-75 transition">Events</a>
-      <a href="#merch" class="text-white uppercase tracking-widest hover:opacity-75 transition">Merch</a>
     </div>
-
+    
     <!-- Center Section: Logo -->
-    <div class="absolute inset-x-0 top-0 pb-8 flex justify-center">
+    <div class="absolute inset-x-0 top-2 flex justify-center">
       <span class="text-white font-bold text-xl uppercase tracking-widest">Greyrock Music</span>
     </div>
-
+    
     <!-- Right Section: Login, Cart, Join Waitlist -->
     <div class="flex items-center space-x-8">
-      <a href="#join" class="border border-white text-white uppercase tracking-widest px-4 py-2 hover:bg-white hover:text-black transition">Join</a>
+      <a href="#merch" class="text-white uppercase tracking-widest hover:opacity-75 transition">Merch</a>
+      <!-- <a href="#join" class="border border-white text-white uppercase tracking-widest px-4 py-2 hover:bg-white hover:text-black transition">Join</a> -->
     </div>
   </header>
 
   <main class="pt-24">
     <!-- Hero Section -->
     <section id="home" class="flex items-center justify-center h-screen bg-cover bg-center" style="background-image: url('assests/images/hero.jpg');">
-      <div class="text-center animate__animated animate__fadeInUp">
+      <div class="text-center animate__animated">
       <h1 class="text-5xl font-extrabold mb-4">Welcome to Greyrock Music</h1>
       <p class="text-xl mb-8">Discover our latest tracks and upcoming events.</p>
       <a href="#music" class="px-6 py-3 bg-blue-600 rounded-full hover:bg-blue-500 transition">Listen Now</a>
@@ -47,14 +47,14 @@
     <!-- About Section -->
     <section id="about" class="py-20 bg-stone-900">
       <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-8 animate__animated animate__fadeInUp">About Us</h2>
-        <p class="text-center max-w-2xl mx-auto animate__animated animate__fadeInUp animate__delay-1s">
+        <h2 class="text-3xl font-bold text-center mb-8 animate__animated">About Us</h2>
+        <p class="text-center max-w-2xl mx-auto animate__animated animate__delay-1s">
           Greyrock Music is rooted in the rich foundation of Las Vegas, a city built on the strength and resilience of caliche—also known as grey rock. Just like the city's foundation, Greyrock Music stands as a solid platform for independent musicians, offering them a space to share their voice, their stories, and their art.
         </p>
-        <p class="text-center max-w-2xl mx-auto mt-6 animate__animated animate__fadeInUp animate__delay-2s">
+        <p class="text-center max-w-2xl mx-auto mt-6 animate__animated animate__delay-2s">
           Founded by passionate musicians who know the power of authentic, homegrown music, Greyrock Music is more than a label—it’s a movement. We are dedicated to showcasing and uplifting the incredible talent that thrives in Las Vegas and beyond. Whether you're an artist looking for a stage, a fan searching for fresh, genuine music, or a part of the community wanting to support local creators, Greyrock is your home.
         </p>
-        <p class="text-center max-w-2xl mx-auto mt-6 animate__animated animate__fadeInUp animate__delay-3s">
+        <p class="text-center max-w-2xl mx-auto mt-6 animate__animated animate__delay-3s">
           Join us as we build a community that celebrates indie music in its purest form, with integrity, collaboration, and heart at the core.
         </p>
       </div>
@@ -63,10 +63,10 @@
     <!-- Events Section -->
     <section id="events" class="py-10 bg-black">
       <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-8 animate__animated animate__fadeInUp">Events</h2>
+        <h2 class="text-3xl font-bold text-center mb-8 animate__animated">Events</h2>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="bg-stone-900 p-6 rounded-lg animate__animated animate__fadeInUp">
+          <div class="bg-stone-900 p-6 rounded-lg animate__animated">
             <h3 class="text-2xl font-bold mb-4">Live Music Night</h3>
             <p class="mb-4">Join us for a night of live music featuring local artists. Enjoy a night of great music, food, and drinks.</p>
             <p class="text-stone-500">Saturday, August 14, 2024</p>
@@ -74,7 +74,7 @@
             <p class="text-stone-500">Greyrock Music Studio</p>
           </div>
           
-          <div class="bg-stone-900 p-6 rounded-lg animate__animated animate__fadeInUp animate__delay-1s">
+          <div class="bg-stone-900 p-6 rounded-lg animate__animated animate__delay-1s">
             <h3 class="text-2xl font-bold mb-4">Open Mic Night</h3>
             <p class="mb-4">Show off your talent at our Open Mic Night. Sing, play an instrument, or perform spoken word.</p>
             <p class="text-stone-500">Friday, August 20, 2024</p>
@@ -82,7 +82,7 @@
             <p class="text-stone-500">Greyrock Music Studio</p>
           </div>
 
-          <div class="bg-stone-900 p-6 rounded-lg animate__animated animate__fadeInUp animate__delay-2s">
+          <div class="bg-stone-900 p-6 rounded-lg animate__animated animate__delay-2s">
             <h3 class="text-2xl font-bold mb-4">Music Workshop</h3>
             <p class="mb-4">Learn from the best at our Music Workshop. Get tips and tricks from industry professionals.</p>
             <p class="text-stone-500">Saturday, August 28, 2024</p>
@@ -90,7 +90,7 @@
             <p class="text-stone-500">Greyrock Music Studio</p>
           </div>
 
-          <div class="bg-stone-900 p-6 rounded-lg animate__animated animate__fadeInUp animate__delay-3s">
+          <div class="bg-stone-900 p-6 rounded-lg animate__animated animate__delay-3s">
             <h3 class="text-2xl font-bold mb-4">Showcase Night</h3>
             <p class="mb-4">Experience the best of local talent at our Showcase Night. Enjoy performances from a variety of artists and genres.</p>
             <p class="text-stone-500">Saturday, September 14, 2024</p>
@@ -105,22 +105,22 @@
     <!-- Merch Section -->
     <section id="merch" class="py-10 bg-stone-900">
       <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-8 animate__animated animate__fadeInUp">Merch</h2>
+        <h2 class="text-3xl font-bold text-center mb-8 animate__animated">Merch</h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="bg-black p-6 rounded-lg animate__animated animate__fadeInUp">
+          <div class="bg-black p-6 rounded-lg animate__animated">
             <img src="assests/merch/tshirt.jpg" alt="t-shirt" class="w-full h-64 object-cover rounded-lg mb-4">
             <h3 class="text-2xl font-bold mb-4">Greyrock Music T-Shirt</h3>
             <p class="mb-4">Show your support for Greyrock Music with our classic logo t-shirt.</p>
-            <p class="text-stone-500 text-center">$25.00</p>
+            <p class="text-stone-50 font-bold text-center">$25.00</p>
             <button class="block w-full py-2 bg-blue-600 rounded-full hover:bg-blue-500 transition mt-4">Add to Cart</button>
           </div>
 
-          <div class="bg-black p-6 rounded-lg animate__animated animate__fadeInUp animate__delay-1s">
+          <div class="bg-black p-6 rounded-lg animate__animated animate__delay-1s">
             <img src="assests/merch/hoodie.jpg" alt="Merch 2" class="w-full h-64 object-cover rounded-lg mb-4">
             <h3 class="text-2xl font-bold mb-4">Greyrock Music Hoodie</h3>
             <p class="mb-4">Stay warm and cozy with our Greyrock Music hoodie.</p>
-            <p class="text-stone-500 text-center">$45.00</p>
+            <p class="text-stone-50 font-bold text-center">$45.00</p>
             <button class="block w-full py-2 bg-blue-600 rounded-full hover:bg-blue-500 transition mt-4">Add to Cart</button>
           </div>
       </div>
@@ -136,12 +136,11 @@
         </div>
   
         <!-- Center: Navigation Links -->
-        <div class="space-x-6">
+        <!-- <div class="space-x-6">
           <a href="#about" class="text-white hover:text-stone-400 transition">About</a>
           <a href="#events" class="text-white hover:text-stone-400 transition">Events</a>
           <a href="#merch" class="text-white hover:text-stone-400 transition">Merch</a>
-          <a href="#contact" class="text-white hover:text-stone-400 transition">Contact</a>
-        </div>
+        </div> -->
   
         <!-- Right: Social Media Links -->
         <div class="flex space-x-4">
@@ -163,9 +162,7 @@
             </svg>
           </a>
           <a href="#" class="text-white hover:text-stone-400 transition" aria-label="TikTok">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M12 0C5.383 0 0 5.383 0 12c0 6.617 5.383 12 12 12 6.617 0 12-5.383 12-12C24 5.383 18.617 0 12 0zm2.94 8.795c.92.69 2.06 1.103 3.29 1.115v2.093c-1.455-.01-2.81-.49-3.89-1.297v5.872c0 2.8-2.271 5.075-5.075 5.075a5.081 5.081 0 0 1-2.415-.618v-2.413a2.964 2.964 0 0 0 1.42.37c1.641 0 2.975-1.335 2.975-2.975 0-.006-.001-.012-.001-.017h-.003v-3.99h-2.15V8.812h2.15V7.422C9.448 6.172 10.556 5 12.084 5c.578 0 1.117.169 1.56.459v3.336z"/>
-            </svg>
+            <svg fill="currentColor" class="h-6 w-6" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>tiktok</title> <path d="M16.656 1.029c1.637-0.025 3.262-0.012 4.886-0.025 0.054 2.031 0.878 3.859 2.189 5.213l-0.002-0.002c1.411 1.271 3.247 2.095 5.271 2.235l0.028 0.002v5.036c-1.912-0.048-3.71-0.489-5.331-1.247l0.082 0.034c-0.784-0.377-1.447-0.764-2.077-1.196l0.052 0.034c-0.012 3.649 0.012 7.298-0.025 10.934-0.103 1.853-0.719 3.543-1.707 4.954l0.020-0.031c-1.652 2.366-4.328 3.919-7.371 4.011l-0.014 0c-0.123 0.006-0.268 0.009-0.414 0.009-1.73 0-3.347-0.482-4.725-1.319l0.040 0.023c-2.508-1.509-4.238-4.091-4.558-7.094l-0.004-0.041c-0.025-0.625-0.037-1.25-0.012-1.862 0.49-4.779 4.494-8.476 9.361-8.476 0.547 0 1.083 0.047 1.604 0.136l-0.056-0.008c0.025 1.849-0.050 3.699-0.050 5.548-0.423-0.153-0.911-0.242-1.42-0.242-1.868 0-3.457 1.194-4.045 2.861l-0.009 0.030c-0.133 0.427-0.21 0.918-0.21 1.426 0 0.206 0.013 0.41 0.037 0.61l-0.002-0.024c0.332 2.046 2.086 3.59 4.201 3.59 0.061 0 0.121-0.001 0.181-0.004l-0.009 0c1.463-0.044 2.733-0.831 3.451-1.994l0.010-0.018c0.267-0.372 0.45-0.822 0.511-1.311l0.001-0.014c0.125-2.237 0.075-4.461 0.087-6.698 0.012-5.036-0.012-10.060 0.025-15.083z"></path> </g></svg>
           </a>
         </div>
       </div>
@@ -177,4 +174,24 @@
     </div>
   </footer>
 </body>
+
+<script>
+  // Function to trigger animation when element comes into view
+  const animateOnScroll = () => {
+    const elements = document.querySelectorAll('.animate__animated'); // Select all elements with Animate.css classes
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate__fadeInUp'); // You can replace this with any animation class
+          observer.unobserve(entry.target); // Remove observer after animation triggers
+        }
+      });
+    }, { threshold: 0.1 }); // Triggers when 10% of the element is visible
+    
+    elements.forEach(element => observer.observe(element));
+  };
+
+  // Initialize the function
+  document.addEventListener('DOMContentLoaded', animateOnScroll);
+</script>
 </html>
